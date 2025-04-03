@@ -3,8 +3,8 @@ import tkinter.messagebox
 tk = Tk()
 tk.title("Tic Tac Toe Game")
 
-PlayerA = StringVar()
-PlayerB = StringVar()
+playerA = StringVar()
+playerB = StringVar()
 p1 = StringVar()
 p2 = StringVar()
 
@@ -26,3 +26,24 @@ def disableButton():
     button7.configure(state = DISABLED)
     button8.configure(state = DISABLED)
     button9.configure(state = DISABLED)
+
+def btnClick(buttons):
+    global bclick, flag, player2_name, player1_name, playerB, playerA
+    if buttons["text"] ==  " " and bclick == True:
+        buttons["text"] = "X"
+        bclick = False
+        playerB = p2.get() + "Wins!!"
+        playerA = p1.get() + "Wins!!"   
+        checkforwin()
+        flag += 1
+    elif buttons["text"] ==  " " and bclick == True:
+        buttons["text"] = "o"
+        bclick = False
+        playerB = p2.get() + "Wins!!"
+        playerA = p1.get() + "Wins!!"   
+        checkforwin()
+        flag += 1
+    else:
+        tkinter.messagebox.showinfo("Tic Tac Toe","Button already clicked")    
+    
+    
