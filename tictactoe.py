@@ -45,5 +45,17 @@ def btnClick(buttons):
         flag += 1
     else:
         tkinter.messagebox.showinfo("Tic Tac Toe","Button already clicked")    
+
+def checkforwin():
+    if(button1['text'] == "X" and button2['text'] == "X" and button3['text'] == "X") or
+    if(button1['text'] == "X" and button2['text' == "X" and button3['text'] == "X") or
+    if(button1['text'] == "X" and button2['text' == "X" and button3['text'] == "X") or
+    if(button1['text'] == "X" and button2['text' == "X" and button3['text'] == "X") or
+    if(button1['text'] == "X" and button2['text' == "X" and button3['text'] == "X") or
+    if(button1['text'] == "X" and button2['text' == "X" and button3['text'] == "X") or
+    if(button1['text'] == "X" and button2['text' == "X" and button3['text'] == "X") or
+    if(button1['text'] == "X" and button2['text' == "X" and button3['text'] == "X") or
+    if(button1['text'] == "X" and button2['text' == "X" and button3['text']] == "X") or
+
     
     
