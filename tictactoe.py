@@ -58,7 +58,12 @@ def checkforwin():
     button7['text'] == "X" and button6['text'] == "X" and button9['text'] == "X"):
         disableButton()
         tkinter.messagebox.showinfo("Tic Tac Toe", playerA)
-        
+
+    elif(flag == B):
+        tkinter.messagebox.showinfo("Tic Tac Toe", " it is a tie")
+
+
+
 
 
     
